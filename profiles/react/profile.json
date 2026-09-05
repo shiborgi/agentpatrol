@@ -1,0 +1,6 @@
+{
+  "id": "react",
+  "description": "React applications, accessible interactions and rendering boundaries",
+  "signals": ["react", "tsx", "jsx"],
+  "skills": ["react-development", "verify-evidence"]
+}

@@ -1,0 +1,6 @@
+{
+  "id": "architect",
+  "description": "Define testable specifications and actionable implementation plans",
+  "stages": ["spec", "plan"],
+  "skills": ["design-change", "verify-evidence"]
+}

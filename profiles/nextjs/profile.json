@@ -1,0 +1,6 @@
+{
+  "id": "nextjs",
+  "description": "Next.js App Router with React interaction and rendering evidence",
+  "signals": ["nextjs", "next", "app-router"],
+  "skills": ["react-development", "nextjs-app-router", "verify-evidence"]
+}

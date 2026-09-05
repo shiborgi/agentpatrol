@@ -1,0 +1,6 @@
+{
+  "id": "python",
+  "description": "Python packages, services and reproducible tests",
+  "signals": ["python", "py", "pytest", "django", "fastapi"],
+  "skills": ["python-development", "verify-evidence"]
+}

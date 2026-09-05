@@ -1,0 +1,6 @@
+{
+  "id": "qa",
+  "description": "Review specifications, plans and builds using independently checked evidence",
+  "stages": ["spec-review", "plan-review", "build-review"],
+  "skills": ["review-change", "verify-evidence"]
+}

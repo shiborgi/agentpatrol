@@ -1,0 +1,15 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "author": {
+    "name": "AgentPatrol"
+  },
+  "description": "Implements approved Plans for Next.js App Router frontends with access-path discipline.",
+  "keywords": [
+    "build",
+    "frontend",
+    "nextjs"
+  ],
+  "license": "Apache-2.0",
+  "name": "nextjs-engineer",
+  "version": "1.0.0"
+}

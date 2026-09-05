@@ -1,0 +1,26 @@
+{
+  "$schema": "../../schemas/agent.schema.json",
+  "schemaVersion": 1,
+  "agent": "nextjs-engineer",
+  "manifest": {
+    "description": "Implements approved Plans for Next.js App Router frontends with access-path discipline.",
+    "author": { "name": "AgentPatrol" },
+    "license": "Apache-2.0",
+    "keywords": ["build", "frontend", "nextjs"]
+  },
+  "skills": [
+    "test-first",
+    "minimal-implementation",
+    "preserve-access-paths",
+    "frontend-a11y-check",
+    "design-token-discipline",
+    "nextjs-app-router",
+    "name-interaction-evidence",
+    "root-cause-first",
+    "evidence-based-completion",
+    "answer-by-prototype",
+    "write-observable-interaction",
+    "detect-interaction-drift"
+  ],
+  "mcpServers": {}
+}

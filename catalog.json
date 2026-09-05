@@ -1,0 +1,5 @@
+{
+  "catalogVersion": "1.0.0",
+  "personas": ["architect", "developer", "qa", "release"],
+  "profiles": ["general", "react", "python", "mcp", "nextjs", "service"]
+}

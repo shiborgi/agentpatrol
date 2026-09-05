@@ -1,0 +1,14 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "author": {
+    "name": "AgentPatrol"
+  },
+  "description": "Implements approved Plans for Hono services in Bun workspaces with the smallest change.",
+  "keywords": [
+    "build",
+    "service"
+  ],
+  "license": "Apache-2.0",
+  "name": "service-engineer",
+  "version": "1.0.0"
+}

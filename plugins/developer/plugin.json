@@ -1,0 +1,1 @@
+{"$schema":"https://agent-plugins.org/schemas/1.0.0/plugin.schema.json","description":"Implement and verify changes","extensions":{"io.shiborgi.agentpatrol":{"id":"developer","instructions":"io.shiborgi.agentpatrol/instructions.md","kind":"persona","metadata":"io.shiborgi.agentpatrol/metadata.json"}},"license":"Apache-2.0","name":"developer","version":"1.0.0"}

@@ -1,0 +1,6 @@
+{
+  "id": "developer",
+  "description": "Implement and verify changes",
+  "stages": ["build"],
+  "skills": ["implement-change", "verify-evidence"]
+}

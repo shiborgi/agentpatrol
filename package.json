@@ -1,0 +1,75 @@
+{
+  "name": "agentpatrol",
+  "version": "1.0.0",
+  "description": "Composable personas, specialist profiles and portable skills for Patrol protocol 1.0.",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shiborgi/agentpatrol.git"
+  },
+  "homepage": "https://github.com/shiborgi/agentpatrol#readme",
+  "bugs": {
+    "url": "https://github.com/shiborgi/agentpatrol/issues"
+  },
+  "bin": {
+    "agentpatrol": "./bin/agentpatrol.js"
+  },
+  "exports": {
+    ".": "./src/index.mjs",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "bin/",
+    "src/",
+    "catalog.json",
+    "agents/architect/",
+    "agents/developer/",
+    "agents/qa/",
+    "agents/release/",
+    "profiles/",
+    "skills/design-change/",
+    "skills/implement-change/",
+    "skills/review-change/",
+    "skills/prepare-release/",
+    "skills/verify-evidence/",
+    "skills/react-development/",
+    "skills/python-development/",
+    "skills/mcp-development/",
+    "skills/nextjs-app-router/",
+    "skills/hono-service/",
+    "skills/bun-workspace/",
+    "plugins/architect/",
+    "plugins/developer/",
+    "plugins/qa/",
+    "plugins/release/",
+    "plugins/profile-general/",
+    "plugins/profile-react/",
+    "plugins/profile-python/",
+    "plugins/profile-mcp/",
+    "plugins/profile-nextjs/",
+    "plugins/profile-service/",
+    "schemas/",
+    "docs/",
+    "CHANGELOG.md",
+    "SECURITY.md",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "build": "node bin/agentpatrol.js build",
+    "check": "node bin/agentpatrol.js check",
+    "validate": "node bin/agentpatrol.js validate",
+    "test": "node --test test/*.test.mjs",
+    "verify": "npm run check && npm run validate && npm test",
+    "release-check": "node scripts/smoke-installed.mjs"
+  },
+  "keywords": [
+    "agents",
+    "codepatrol",
+    "plugins"
+  ],
+  "license": "Apache-2.0"
+}

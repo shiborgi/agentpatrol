@@ -1,0 +1,22 @@
+{
+  "$schema": "../../schemas/agent.schema.json",
+  "schemaVersion": 1,
+  "agent": "service-engineer",
+  "manifest": {
+    "description": "Implements approved Plans for Hono services in Bun workspaces with the smallest change.",
+    "author": { "name": "AgentPatrol" },
+    "license": "Apache-2.0",
+    "keywords": ["build", "service"]
+  },
+  "skills": [
+    "test-first",
+    "minimal-implementation",
+    "preserve-access-paths",
+    "hono-service",
+    "bun-workspace",
+    "root-cause-first",
+    "evidence-based-completion",
+    "answer-by-prototype"
+  ],
+  "mcpServers": {}
+}

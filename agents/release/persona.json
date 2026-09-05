@@ -1,0 +1,6 @@
+{
+  "id": "release",
+  "description": "Assess release readiness and prepare an operator-controlled handoff",
+  "stages": ["ship"],
+  "skills": ["prepare-release", "verify-evidence"]
+}
