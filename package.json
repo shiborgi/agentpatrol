@@ -1,0 +1,103 @@
+{
+  "name": "agentpatrol",
+  "version": "1.0.0",
+  "description": "Composable personas, specialist profiles and portable skills for Patrol protocol 1.0.",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shiborgi/agentpatrol.git"
+  },
+  "homepage": "https://github.com/shiborgi/agentpatrol#readme",
+  "bugs": {
+    "url": "https://github.com/shiborgi/agentpatrol/issues"
+  },
+  "bin": {
+    "agentpatrol": "./bin/agentpatrol.js"
+  },
+  "exports": {
+    ".": "./src/index.mjs",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "bin/",
+    "src/",
+    "catalog.json",
+    "agents/architect/",
+    "agents/developer/",
+    "agents/qa/",
+    "agents/release/",
+    "profiles/",
+    "skills/design-change/",
+    "skills/clarify-intent/",
+    "skills/inventory-ambiguity/",
+    "skills/write-testable-acceptance/",
+    "skills/record-non-goals/",
+    "skills/delta-from-current/",
+    "skills/map-acceptance/",
+    "skills/scope-hotspots/",
+    "skills/implement-change/",
+    "skills/root-cause-first/",
+    "skills/minimal-implementation/",
+    "skills/test-first/",
+    "skills/evidence-based-completion/",
+    "skills/review-change/",
+    "skills/two-axis-review/",
+    "skills/check-cross-artifact/",
+    "skills/detect-spec-drift/",
+    "skills/name-verification/",
+    "skills/strip-over-engineering/",
+    "skills/prepare-release/",
+    "skills/verify-evidence/",
+    "skills/react-development/",
+    "skills/write-observable-interaction/",
+    "skills/frontend-a11y-check/",
+    "skills/responsive-interaction/",
+    "skills/preserve-access-paths/",
+    "skills/detect-interaction-drift/",
+    "skills/visual-regression-evidence/",
+    "skills/python-development/",
+    "skills/mcp-development/",
+    "skills/nextjs-app-router/",
+    "skills/web-vitals-budget/",
+    "skills/hono-service/",
+    "skills/bun-workspace/",
+    "plugins/architect/",
+    "plugins/developer/",
+    "plugins/qa/",
+    "plugins/release/",
+    "plugins/profile-general/",
+    "plugins/profile-react/",
+    "plugins/profile-python/",
+    "plugins/profile-mcp/",
+    "plugins/profile-nextjs/",
+    "plugins/profile-service/",
+    "schemas/",
+    "docs/",
+    "CHANGELOG.md",
+    "SECURITY.md",
+    "README.md",
+    "LICENSE",
+    "skills/relational-schema/",
+    "skills/shared-contract/",
+    "skills/design-system-discipline/",
+    "plugins/profile-data/",
+    "skills/layout-composition/"
+  ],
+  "engines": {
+    "node": ">=22.13"
+  },
+  "scripts": {
+    "build": "node bin/agentpatrol.js build",
+    "check": "node bin/agentpatrol.js check",
+    "validate": "node bin/agentpatrol.js validate",
+    "test": "node --test test/*.test.mjs",
+    "verify": "npm run check && npm run validate && npm test",
+    "release-check": "node scripts/smoke-installed.mjs"
+  },
+  "keywords": [
+    "agents",
+    "codepatrol",
+    "plugins"
+  ],
+  "license": "MIT"
+}

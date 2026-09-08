@@ -1,0 +1,17 @@
+{
+  "id": "service",
+  "description": "HTTP services with Hono and Bun workspace expertise when applicable",
+  "signals": [
+    "service",
+    "hono",
+    "bun",
+    "http",
+    "api"
+  ],
+  "skills": [
+    "hono-service",
+    "bun-workspace",
+    "shared-contract",
+    "verify-evidence"
+  ]
+}

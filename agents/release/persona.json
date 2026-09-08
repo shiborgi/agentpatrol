@@ -1,0 +1,6 @@
+{
+  "id": "release",
+  "description": "Assess release readiness from candidate-specific evidence",
+  "stages": ["ship"],
+  "skills": ["prepare-release", "evidence-based-completion", "verify-evidence"]
+}

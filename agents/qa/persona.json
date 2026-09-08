@@ -1,0 +1,6 @@
+{
+  "id": "qa",
+  "description": "Independently assess scope, quality, and verification evidence",
+  "stages": ["spec-review", "plan-review", "build-review"],
+  "skills": ["review-change", "two-axis-review", "check-cross-artifact", "detect-spec-drift", "map-acceptance", "name-verification", "strip-over-engineering", "verify-evidence"]
+}

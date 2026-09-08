@@ -1,0 +1,6 @@
+{
+  "id": "data",
+  "description": "Relational persistence where the database enforces the domain's invariants",
+  "signals": ["database", "sql", "postgres", "postgresql", "migration", "orm", "schema"],
+  "skills": ["relational-schema", "verify-evidence"]
+}

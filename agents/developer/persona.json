@@ -1,0 +1,6 @@
+{
+  "id": "developer",
+  "description": "Diagnose, implement, and evidence the smallest safe change",
+  "stages": ["build"],
+  "skills": ["root-cause-first", "minimal-implementation", "test-first", "implement-change", "evidence-based-completion", "verify-evidence"]
+}

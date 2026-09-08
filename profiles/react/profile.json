@@ -1,0 +1,21 @@
+{
+  "id": "react",
+  "description": "React interfaces with observable, accessible, responsive behavior",
+  "signals": [
+    "react",
+    "tsx",
+    "jsx"
+  ],
+  "skills": [
+    "react-development",
+    "write-observable-interaction",
+    "frontend-a11y-check",
+    "responsive-interaction",
+    "preserve-access-paths",
+    "detect-interaction-drift",
+    "visual-regression-evidence",
+    "layout-composition",
+    "design-system-discipline",
+    "verify-evidence"
+  ]
+}

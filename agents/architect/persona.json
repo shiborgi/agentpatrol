@@ -1,0 +1,6 @@
+{
+  "id": "architect",
+  "description": "Clarify intent and map testable, bounded change guidance",
+  "stages": ["spec", "plan"],
+  "skills": ["clarify-intent", "inventory-ambiguity", "design-change", "write-testable-acceptance", "record-non-goals", "delta-from-current", "map-acceptance", "scope-hotspots", "verify-evidence"]
+}

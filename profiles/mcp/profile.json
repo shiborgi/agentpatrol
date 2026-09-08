@@ -1,0 +1,13 @@
+{
+  "id": "mcp",
+  "description": "Model Context Protocol server and client development, not execution",
+  "signals": [
+    "mcp",
+    "model-context-protocol"
+  ],
+  "skills": [
+    "mcp-development",
+    "shared-contract",
+    "verify-evidence"
+  ]
+}

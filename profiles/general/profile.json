@@ -1,0 +1,6 @@
+{
+  "id": "general",
+  "description": "Repository-independent engineering and evidence discipline",
+  "signals": ["general"],
+  "skills": ["verify-evidence"]
+}

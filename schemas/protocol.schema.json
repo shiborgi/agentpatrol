@@ -1,0 +1,70 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://shiborgi.io/agentpatrol/schemas/protocol.schema.json",
+  "title": "AgentPatrol Protocol 1.0",
+  "$defs": {
+    "id": { "type": "string", "maxLength": 64, "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$" },
+    "ids": { "type": "array", "maxItems": 128, "uniqueItems": true, "items": { "$ref": "#/$defs/id" } },
+    "catalogRequest": {
+      "type": "object", "required": ["protocolVersion"], "additionalProperties": false,
+      "properties": { "protocolVersion": { "const": "1.0" } }
+    },
+    "resolveRequest": {
+      "type": "object", "required": ["protocolVersion", "persona", "profiles"], "additionalProperties": false,
+      "properties": {
+        "protocolVersion": { "const": "1.0" },
+        "persona": { "$ref": "#/$defs/id" },
+        "profiles": { "type": "array", "maxItems": 128, "items": { "$ref": "#/$defs/id" } }
+      }
+    },
+    "persona": {
+      "type": "object", "required": ["id", "description", "stages", "skills"], "additionalProperties": false,
+      "properties": {
+        "id": { "$ref": "#/$defs/id" },
+        "description": { "type": "string", "minLength": 1 },
+        "stages": {
+          "type": "array", "minItems": 1, "uniqueItems": true,
+          "items": { "enum": ["spec", "spec-review", "plan", "plan-review", "build", "build-review", "ship"] }
+        },
+        "skills": { "$ref": "#/$defs/ids", "minItems": 1 }
+      }
+    },
+    "profile": {
+      "type": "object", "required": ["id", "description", "signals", "skills"], "additionalProperties": false,
+      "properties": {
+        "id": { "$ref": "#/$defs/id" },
+        "description": { "type": "string", "minLength": 1 },
+        "signals": { "$ref": "#/$defs/ids" },
+        "skills": { "$ref": "#/$defs/ids", "minItems": 1 }
+      }
+    },
+    "catalogResponse": {
+      "type": "object", "required": ["protocolVersion", "catalogVersion", "contentDigest", "personas", "profiles"], "additionalProperties": false,
+      "properties": {
+        "protocolVersion": { "const": "1.0" }, "catalogVersion": { "const": "1.0.0" },
+        "contentDigest": { "type": "string", "pattern": "^[a-f0-9]{64}$" },
+        "personas": { "type": "array", "items": { "$ref": "#/$defs/persona" } },
+        "profiles": { "type": "array", "items": { "$ref": "#/$defs/profile" } }
+      }
+    },
+    "skill": {
+      "type": "object", "required": ["id", "instructions"], "additionalProperties": false,
+      "properties": { "id": { "$ref": "#/$defs/id" }, "instructions": { "type": "string", "minLength": 1 } }
+    },
+    "resolveResponse": {
+      "type": "object", "required": ["protocolVersion", "catalogVersion", "catalogDigest", "persona", "profiles", "skills", "instructions", "digest"], "additionalProperties": false,
+      "properties": {
+        "protocolVersion": { "const": "1.0" }, "catalogVersion": { "const": "1.0.0" },
+        "catalogDigest": { "type": "string", "pattern": "^[a-f0-9]{64}$" },
+        "persona": { "$ref": "#/$defs/id" }, "profiles": { "$ref": "#/$defs/ids" },
+        "skills": { "type": "array", "items": { "$ref": "#/$defs/skill" } },
+        "instructions": { "type": "string", "minLength": 1 },
+        "digest": { "type": "string", "pattern": "^[a-f0-9]{64}$" }
+      }
+    }
+  },
+  "oneOf": [
+    { "$ref": "#/$defs/catalogRequest" }, { "$ref": "#/$defs/resolveRequest" },
+    { "$ref": "#/$defs/catalogResponse" }, { "$ref": "#/$defs/resolveResponse" }
+  ]
+}

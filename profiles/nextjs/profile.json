@@ -1,0 +1,23 @@
+{
+  "id": "nextjs",
+  "description": "Next.js App Router surfaces with observable user-flow evidence",
+  "signals": [
+    "nextjs",
+    "next",
+    "app-router"
+  ],
+  "skills": [
+    "react-development",
+    "nextjs-app-router",
+    "web-vitals-budget",
+    "write-observable-interaction",
+    "frontend-a11y-check",
+    "responsive-interaction",
+    "preserve-access-paths",
+    "detect-interaction-drift",
+    "visual-regression-evidence",
+    "layout-composition",
+    "design-system-discipline",
+    "verify-evidence"
+  ]
+}
