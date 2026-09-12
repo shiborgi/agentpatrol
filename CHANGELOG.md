@@ -6,6 +6,8 @@ Initial public release.
 
 - Provide architect, developer, qa and release lifecycle personas.
 - Provide orthogonal general, react, python, data, mcp, nextjs and service profiles.
+- Cover modern typed Python services with uv/Pydantic signals and explicit
+  pytest, Ruff, mypy/Pyright, schema, async, and resource-safety guidance.
 - Implement exact Patrol 1.0 catalog/resolve requests and responses, deterministic
   composition and complete recursively key-sorted response digests.
 - Require catalog `contentDigest` over all active descriptors, instructions and raw

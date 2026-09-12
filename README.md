@@ -150,12 +150,14 @@ Profile packs are reusable skill packs, not standalone lifecycle personas.
 
 ## Patrol Integration
 
-`codepatrol.json` configures only portable PATH-based Patrol provider argv arrays and
-verification. CodePatrol owns routing, execution adapters, workflow gates and
-telemetry. ContextPatrol owns read-only context. No package imports sibling source.
-An executor is intentionally omitted: installing a skills provider does not
-authorize model execution, network access or deployment. Release requires separate
-explicit human approval, enforced by the host rather than these instructions.
+`codepatrol.json` uses the standardized local Patrol integration: portable
+PATH-based providers, MemoryPatrol handoffs, Pi executor, pinned ModelPatrol
+transport, safe progress, verification, bounded limits, and telemetry. It is an
+operator-invoked development configuration and grants no remote or deployment
+authority. CodePatrol owns routing, execution adapters, workflow gates and
+telemetry; ContextPatrol owns read-only context. No package imports sibling source.
+Release requires separate explicit human approval, enforced by the host rather
+than these instructions.
 
 See [protocol](docs/protocol.md), [architecture](docs/architecture.md),
 [contributing](CONTRIBUTING.md), [security](SECURITY.md) and [changelog](CHANGELOG.md).
